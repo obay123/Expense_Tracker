@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins' , sans-serif;
+    }
+
+    html{
+        font-size: 62.5%;
+        overflow-x: hidden;
+        background-color: #fdbc30;
+    }
+  body {
+    overflow: hidden;
+}
+
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: solid;
+        background-color: #1F2127;
+    }
+
+    .logo{
+        width:40%; 
+        transition: 0.5s ease;
+    }
+
+    .logo:hover{
+        transform: scale(1.1);
+        filter: drop-shadow(0 0 25px white);
+    }
+
+
+    .logo img {
+        margin-left: 5rem;
+        width: 23%;
+        height: 50%;
+        padding: 1.2rem;
+    }
+    
+    .links {
+        text-align: center;
+        font-size: 2rem;
+        
+        
+    }
+    
+    .links a {
+        margin-right: 20px ; /* Adjust as needed */
+        color: white;
+        font-family: 'Ranade', sans-serif;
+        
+    }
+
+    .links a:hover {
+    transform: scale(1.1);
+    border-bottom: 2px solid #fdbc30;
+    
+    }
+    .navbar {
+        font-size: 2rem;
+        margin-left: auto;
+        margin-right: 5rem;
+    }
+    
+    .navbar a{
+        color: white;
+        font-family: 'Ranade', sans-serif;
+       
+    }
+
+
+    .navbar a:hover{
+    
+    transform:scale(1.1) ;
+    border-bottom: 2px solid #fdbc30;
+    }
+
+
+    
+
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    border: 1.5px solid #fdbc30;
+    border-radius: 4px;
+     
+}
+input::placeholder{
+    font-size: 1.3rem;
+    transition: 0.8s ease;
+}
+
+input:focus::placeholder {
+    transform: translateX(110%);
+}
+.form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 35%;
+    margin-top: 10%;
+    
+    width:30%;
+    
+    
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    position: relative;
+    border-radius:1rem ;
+    
+}
+
+.form-group label{
+    font-family: 'Excon', sans-serif;
+    font-size: 17px;
+    padding: 0.8rem;
+    font-weight: 500;
+}
+
+button{
+    position: relative;
+    padding: 1rem;
+    width: 100%;
+    margin-top: 2rem;
+    border-radius:1rem
+
+}
+
+.heading{
+    
+    position: fixed; 
+    top: 30%;
+     left: 43%;
+    font-size: 30px;
+    font-weight: 800;
+    font-family: 'Ranade', sans-serif;
+}
+
+.form-group{
+    background-color: white;
+}
+
+#btn{
+    background-color: #1F2127 ;
+    font-size: 1.5rem;
+    color: white;
+    transition:  0.5s ease;
+}
+
+#btn:hover{
+    background-color:white;
+    color:  #1F2127;
+    transform: scale(1.1);
+    border: 1px solid  #1F2127;
+    filter: drop-shadow(0 0 25px  #1F2127);
+    font-weight: 700;
+}
+
+.exp{
+    position: absolute;
+    width: 10%;
+    height: 18%;
+    top: 15%;
+    left: 45%;
+}
