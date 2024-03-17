@@ -18,70 +18,90 @@
     overflow: hidden;
 }
 
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: solid;
+    background-color: #1F2127;
+}
 
-    header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        border: solid;
-        background-color: #1F2127;
-    }
+.logo{
+    width:40%; 
+    transition: 0.5s ease;
+}
 
-    .logo{
-        width:40%; 
-        transition: 0.5s ease;
-    }
-
-    .logo:hover{
-        transform: scale(1.1);
-        filter: drop-shadow(0 0 25px white);
-    }
-
-
-    .logo img {
-        margin-left: 5rem;
-        width: 23%;
-        height: 50%;
-        padding: 1.2rem;
-    }
-    
-    .links {
-        text-align: center;
-        font-size: 2rem;
-        
-        
-    }
-    
-    .links a {
-        margin-right: 20px ; /* Adjust as needed */
-        color: white;
-        font-family: 'Ranade', sans-serif;
-        
-    }
-
-    .links a:hover {
+.logo:hover{
     transform: scale(1.1);
-    border-bottom: 2px solid #fdbc30;
-    
-    }
-    .navbar {
-        font-size: 2rem;
-        margin-left: auto;
-        margin-right: 5rem;
-    }
-    
-    .navbar a{
-        color: white;
-        font-family: 'Ranade', sans-serif;
-       
-    }
+    filter: drop-shadow(0 0 25px white);
+}
 
 
-    .navbar a:hover{
+.logo img {
+    margin-left: 5rem;
+    width: 20%;
+    height: 50%;
+    padding: 1.2rem;
+}
+
+.links {
+    text-align: center;
+    font-size: 2rem;
     
-    transform:scale(1.1) ;
-    border-bottom: 2px solid #fdbc30;
-    }
+    
+}
+
+.links a {
+    margin-right: 20px ; 
+    color: white;
+    font-family: 'Ranade', sans-serif;
+    
+}
+
+.links a:hover {
+transform: scale(1.1);
+border-bottom: 2px solid #fdbc30;
+
+}
+.navbar {
+    font-size: 1.7rem;
+    margin-left: auto;
+    margin-right: 5rem;
+    
+}
+
+.navbar a{
+    color: white;
+    font-family: 'Ranade', sans-serif;
+    padding:1rem ;
+    border: 1px solid white;
+   transition: 0.5s ease;
+}
+
+.navbar .expense{
+    background-color:  #fdbc30;
+    color: black;
+    
+}
+
+
+.navbar .expense:hover{
+    background-color:  #1F2127;
+    color: white;
+    border: 1.2px solid #fdbc30;
+
+}
+
+.navbar .income{
+    background-color: #42C2CF;
+    color: black;
+}
+    
+.navbar .income:hover{
+    background-color:#1F2127;
+    color: white;
+    border: 1.2px solid  #42C2CF ;
+}
 
 
     

@@ -1,22 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/index.css">
-    <title>Expense Tracker</title>
-</head>
-<body>
+
     <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Expense Tracker</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
- 
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Transactions</title>
+      <link rel="stylesheet" href="main_page.css">
+    </head>
+    <body>  
+        <header>
+            <div class="logo">
+                <a href="../Main Page/main_page.html"><img src="../expense-tracker-software-removebg-preview.png"></a>
+            </div>
+            <div class="links">
+                <a href="../View Expenses History/view_expenses.html">Expenses List</a>
+                <a href="../View Income History/view_income.html">Income List</a>
+            </div>
+            <nav class="navbar">
+                <a class="income" href="../Adding new Income/adding_income.html">New Income</a>
+                <a class="expense" href="../Adding new Expenses/adding_expense.html">New Expense</a>
+            </nav>
+        </header>
+      <div class="container">
+        <div class="section">
+          <h2>Expenses</h2>
+          <p class="expense-amount">$945.00</p>
+          <p>Number of Transactions: 2</p>  
+          <p>Minimum Transactions: 45</p>
+          <p>Maximum Transactions: 900</p>
+          <p>Average Transactions: 472.5</p>
+          <a href="../View Expenses History/view_expenses.html">View Expenses History</a>
+        </div>
+        <div class="section">
+          <h2>Income</h2>
+          <p>$620.00</p>
+          <p>Number of Transactions: 4</p>
+          <p>Minimum Transactions: 32</p>
+          <p>Maximum Transactions: 500</p>
+          <p>Average Transactions: 310</p>
+          <a href="../View Income History/view_income.html">View Income History</a>
+        </div>
+      </div>
+    </body>
+    </html>
+    
+
+ </div>
     <script src="./src/index.js"></script>
 </body>
 </html>
