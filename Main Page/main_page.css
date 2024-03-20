@@ -141,14 +141,67 @@ border-bottom: 2px solid #fdbc30;
   }
   
   .section a {
-    
+    display: flex;
     text-decoration: none;
     color: #000;
     border: 1.5px solid black;
     padding: 0.5rem;
-    width: 100%;
+   width: 100%;
     font-size: 1.3rem;
-    font-weight: 800    ;
-    
+    font-weight: 800;
+    text-align: center;
+    justify-content: center;
+    margin-top: 2rem;
+    border: none;
+    transition: all 0.5s ease;
   }
   
+  .section  .exp{
+    
+background-color: #fdbc30;
+
+  }
+
+  .section .inc{
+    background-color: #42C2CF;
+  }
+
+  .section a:hover{
+  transform: scale(1.1);
+  }
+
+  .chart {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
+    width: 600px;
+    margin: auto;
+
+  }
+
+  @media all and (max-width: 780px) {
+    .container {
+      width: auto;
+    }
+  }
+  
+  @media all and (max-width: 400px) {
+    .container {
+      padding: 0px 20px;
+    }
+  }
+
+  h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #565656;
+  }
+
+  .pie{
+    height: 400px;
+    width: 400px;
+    margin:auto;
+    
+    
+   
+  }

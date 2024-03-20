@@ -6,6 +6,8 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Transactions</title>
       <link rel="stylesheet" href="main_page.css">
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      
     </head>
     <body>  
         <header>
@@ -21,24 +23,33 @@
                 <a class="expense" href="../Adding new Expenses/adding_expense.html">New Expense</a>
             </nav>
         </header>
+
+
+        <div class="chart">
+          <h1>Pie Chart</h1>
+          <div class="pie">
+            <canvas id="pie-chart"></canvas>
+          </div>
+        </div>
+
       <div class="container">
         <div class="section">
           <h2>Expenses</h2>
-          <p class="expense-amount">$945.00</p>
-          <p>Number of Transactions: 2</p>  
-          <p>Minimum Transactions: 45</p>
-          <p>Maximum Transactions: 900</p>
-          <p>Average Transactions: 472.5</p>
-          <a href="../View Expenses History/view_expenses.html">View Expenses History</a>
+          <p class="expense-amount">$0</p>
+          <p>Number of Transactions:<span id="expense-nb-transactions">0</span></p>
+          <p>Minimum Transactions:<span id="expense-min-transactions">0</span></p>
+          <p>Maximum Transactions:<span id="expense-max-transactions">0</span></p>
+          <p>Average Transactions:<span id="expense-avr-transactions">0</span></p>
+          <a class="exp" href="../View Expenses History/view_expenses.html">View Expenses History</a>
         </div>
         <div class="section">
           <h2>Income</h2>
-          <p>$620.00</p>
-          <p>Number of Transactions: 4</p>
-          <p>Minimum Transactions: 32</p>
-          <p>Maximum Transactions: 500</p>
-          <p>Average Transactions: 310</p>
-          <a href="../View Income History/view_income.html">View Income History</a>
+          <p class="income-amount">$0</p>
+          <p>Number of Transactions:<span id="income-nb-transactions">0</span></p>
+          <p>Minimum Transactions:<span id="income-min-transactions">0</span></p>
+          <p>Maximum Transactions:<span id="income-max-transactions">0</span></p>
+          <p>Average Transactions:<span id="income-avr-transactions">0</span></p>
+          <a class="inc" href="../View Income History/view_income.html">View Income History</a>
         </div>
       </div>
     </body>
@@ -46,7 +57,8 @@
     
 
  </div>
-    <script src="./src/index.js"></script>
+
+    <script src="../main.js"></script>
 </body>
 </html>
             
