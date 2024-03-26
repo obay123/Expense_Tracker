@@ -1,9 +1,4 @@
 
-/*adding income */
-
-
-
-// Wait for the DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function () {
     const incomeForm = document.getElementById('income-form');
 

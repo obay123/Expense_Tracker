@@ -164,7 +164,7 @@ button{
 .heading{
     
     position: fixed; 
-    top: 30%;
+    top: 28%;
      left: 43%;
     font-size: 30px;
     font-weight: 800;
@@ -196,6 +196,6 @@ button{
     position: absolute;
     width: 10%;
     height: 15%;
-    top: 16%;
+    top: 13%;
     left: 45%;
 }

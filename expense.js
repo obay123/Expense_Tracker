@@ -1,9 +1,4 @@
 
-
-/*adding expenses */
-
-
-
 document.addEventListener('DOMContentLoaded', function () {
 
     const expenseForm = document.getElementById('expense-form');
