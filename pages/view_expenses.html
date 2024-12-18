@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker - Expenses List</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/view_expenses.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <header class="header">
+            <div class="header-container">
+                <div class="logo">
+                    <a href="../main_page.html">
+                        <img src="../images/expense-tracker-software-removebg-preview.png" alt="Expense Tracker Logo">
+                    </a>
+                </div>
+                <nav class="nav-menu">
+                    <a href="../pages/view_expenses.html" class="nav-link active">
+                        <i class="fas fa-chart-pie"></i> Expenses
+                    </a>
+                    <a href="../pages/view_income.html" class="nav-link">
+                        <i class="fas fa-money-bill-wave"></i> Income
+                    </a>
+                    <a href="../pages/adding_expense.html" class="nav-link new-income">
+                        <i class="fas fa-plus-circle"></i> New Expense
+                    </a>
+                </nav>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-container">
+            <section class="expenses-section">
+                <div class="section-header">
+                    <h1 class="section-title">
+                        <i class="fas fa-receipt"></i> Recent Expenses
+                    </h1>
+                    <div class="filter-controls">
+                        <div class="filter-group">
+                            <label for="category-filter">
+                                <i class="fas fa-filter"></i> Category
+                            </label>
+                            <select id="category-filter">
+                                <option value="">All Categories</option>
+                                <option value="food">Food</option>
+                                <option value="transport">Transport</option>
+                                <option value="utilities">Utilities</option>
+                                <option value="entertainment">Entertainment</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="date-sort">
+                                <i class="fas fa-sort"></i> Sort by Date
+                            </label>
+                            <select id="date-sort">
+                                <option value="newest">Newest First</option>
+                                <option value="oldest">Oldest First</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="expenses-summary">
+                    <div class="summary-card">
+                        <i class="fas fa-dollar-sign"></i>
+                        <div class="summary-content">
+                            <h3>Total Expenses</h3>
+                            <p id="total-expenses">$0.00</p>
+                        </div>
+                    </div>
+                    <div class="summary-card">
+                        <i class="fas fa-chart-pie"></i>
+                        <div class="summary-content">
+                            <h3>Average Expense</h3>
+                            <p id="average-expense">$0.00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="expenses-table" id="expenses-table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Category</th>
+                                <th>Amount</th>
+                                <th>Date</th>
+                                <th class="actions">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="expenses-list">
+                            <!-- Expenses will be dynamically populated here -->
+                        </tbody>
+                    </table>
+                    <div id="no-expenses" class="no-data-message">
+                        <i class="fas fa-inbox"></i>
+                        <p>No expenses recorded yet.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="footer-content">
+                <p>&copy; 2024 Expense Tracker. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Contact Us</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../src/view-expense.js" type="module"></script>
+</body>
+</html>

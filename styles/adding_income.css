@@ -12,11 +12,12 @@
     html{
         font-size: 62.5%;
         overflow-x: hidden;
-        background-color: #42C2CF;
+        background-color: #f8f8f8;
     }
 
     body {
         overflow: hidden;
+        color: #333;
     }
 
     header {
@@ -37,7 +38,7 @@
         filter: drop-shadow(0 0 25px white);
     }
     
-    
+        
     .logo img {
         margin-left: 5rem;
         width: 20%;
